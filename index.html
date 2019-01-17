@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <title>Minefield</title>
+<head>
+    <meta charset="UTF-8">
+    <script src="model.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" >
+    </head>
+
+<body >
+    <div class="header">
+        <h1 id = "heading">Minefield</h1>
+    </div>
+
+    <div class="gameover">
+        <p id="gameover"></p>
+    </div>
+    
+    <input type="button" value="New game" onclick="initGame();">
+
+    <div class="">
+        
+    </div>
+    
+    <div>
+        <div class="pointsmeter" >
+            Licznik punktów<br>
+            <p  id="pointsmeter"></p>
+        </div>    
+    </div>
+    
+    <div>
+        <div class="livesmeter" > 
+            Licznik zyc <br>
+            <p  id="livesmeter"></p>
+        </div>
+    </div>
+    
+    <div id="minefield" ></div>
+
+    
+    <div class="footer">
+        <p id="wins_lives"></p>
+    </div>
+
+    <script type='text/javascript' > 
+        var model={}; 
+        var view={};
+    </script>
+
+    <script type="text/javascript" src="model.js"></script>
+    <script type="text/javascript" src="view.js"></script>
+    <script type="text/javascript" src="controller.js" ></script>
+
+    <script type='text/javascript'> 
+        initGame();
+    </script>
+
+</body>
+</html>
